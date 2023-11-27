@@ -1,0 +1,297 @@
+/* AccessibilityButton.css */
+.button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .accessibility-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #07782a;
+    color: white;
+    padding: 15px; /* Increased padding to make it a circle */
+    border-radius: 50%;
+    border: none;
+    transition: all 0.3s;
+    display: flex; /* Added to center the image */
+    align-items: center; /* Added to center the image */
+    justify-content: center; /* Added to center the image */
+  }
+  
+  .accessibility-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .accessibility-button img {
+    max-width: 100%; /* Ensure the image does not exceed the button's size */
+    max-height: 100%; /* Ensure the image does not exceed the button's size */
+  }
+  
+  .modal-header {
+    background-color: #0f9326;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    height: 30%;
+  }
+  
+
+  .modal-header h2 {
+    color: white;
+  }
+  
+  .header-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .header-button {
+    background-color: white;
+    color: #0f9326;
+    padding: 8px 16px;
+    margin: 0 25px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .header-button:hover {
+    background-color: #07782a;
+  }
+  
+ 
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+  margin-right: 600px; /* Adjusted margin to move the button to the left */
+
+}
+  .input-container {
+    margin-top: 10px;
+  }
+  
+  .custom-input {
+    width: 97%;
+    padding: 8px;
+    border: none;
+    border-radius: 50px;
+    background-color: #065a1e; /* Darker shade of #0f9326 */
+    color: white;
+    outline: none; /* Remove input focus outline */
+  }
+  
+  .custom-input::placeholder {
+    color: white;
+    opacity: 0.8;
+  }
+
+  .modal-content {
+    background-color: #ececf4;
+    height: 100%; /* Ensure the modal content takes full height */
+  }
+  
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 50%; /* Adjusted height for card container (80% of modal height minus spacing) */
+  }
+  
+  .card {
+    width: 90%; /* 90% of the modal width */
+    background-color: white;
+    border: none; /* Remove border */
+    border-radius: 15px; /* Rounded border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+    margin-bottom: 20px;
+  }
+
+  .card .profile-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card .profile-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc; /* Gray line at the bottom */
+    padding: 10px;
+  }
+  
+  .card .profile-list li.last-item {
+    border-bottom: none; /* No gray line at the bottom for the last item */
+  }
+  
+  .card .profile-list li .profile-button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: #07782a;
+    border-radius: 50%;
+  }
+  
+  .card .profile-list li span {
+    margin-left: 10px;
+  }
+  
+  .card .profile-list li .gray-circle {
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  .card .profile-list li .gray-circle svg {
+    color: #000; /* Set the color of the icon */
+  }
+
+  .card .profile-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc; /* Gray line at the bottom */
+    padding: 10px;
+  }
+  
+  .card .profile-list li div {
+    display: flex;
+    align-items: center; /* Center profile-content vertically */
+    margin-left: 10px;
+  }
+  
+  .card .profile-list li .profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center profile-content horizontally */
+    text-align: center; /* Center text within profile-content */
+  }
+  
+  .card .profile-list li .profile-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card .profile-list li p {
+    margin: 5px 0;
+    color: #555; /* Adjust the color as needed */
+  }
+
+  /* Box 2 */
+
+  .card .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px; /* Increased gap for more spacing */
+    padding: 10px; /* Padding around the box-container */
+  }
+  
+  .card .box {
+    background-color: #ececf4;
+    padding: 15px; /* Increased padding for more spacing inside each box */
+    border-radius: 8px;
+  }
+  
+  .card .box h5 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .card .box p {
+    margin: 5px 0;
+    color: #555; /* Adjust the color as needed */
+  }
+  
+  .card .box.span2 {
+    grid-column: span 2;
+  }
+
+  /* Card 3 */
+
+  .card .box-container.color-adjustments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px; /* Increased gap for more spacing */
+    padding: 10px; /* Padding around the box-container */
+  }
+
+  /* Card 4 */
+
+  .card .box-container.orientation-adjustments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px; /* Increased gap for more spacing */
+    padding: 10px; /* Padding around the box-container */
+  }
+  
+  .profile-button-container {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .profile-button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s; /* Added color transition */
+    position: relative;
+  }
+  
+  .profile-button:before {
+    content: '';
+    position: absolute;
+    top: 0; /* Adjusted top to 0 */
+    left: 0;
+    width: 100%; /* Adjusted width to 100% */
+    height: 100%; /* Adjusted height to 100% */
+    border-radius: 50%;
+    background-color: #fff;
+    transition: left 0.3s;
+    z-index: -1; /* Set z-index to -1 to position it behind the profile-button */
+  }
+  
+  .profile-button.off:before {
+    left: 0;
+  }
+  
+  .profile-button.on:before {
+    left: 100%; /* Adjusted left to 100% */
+  }
+  
+  .profile-button.selected {
+    background-color: #65a34c;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: white; /* Text color when selected */
+    z-index: 1; /* Set z-index to 1 for the profile-button */
+  }
+  
+  .profile-button:not(.selected) {
+    background-color: #ececf4;
+    color: #333; /* Text color when not selected */
+  }
+  
+  .profile-button:hover:not(.selected) {
+    background-color: #dcdcdc;
+  }
+  
